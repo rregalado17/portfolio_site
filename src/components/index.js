@@ -1,4 +1,4 @@
-import About from "./About";
+import Welcome from "./Welcome";
 import Bio from "./Bio";
 import Contact from "./Contact";
 import Footer from "./Footer";
@@ -7,7 +7,7 @@ import Projects from "./Projects";
 import Techstack from "./Techstack";
 
 export {
-    About,
+    Welcome,
     Bio,
     Contact,
     Footer,

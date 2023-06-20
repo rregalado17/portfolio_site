@@ -1,8 +1,12 @@
-import React from 'react'
+import { useState } from 'react'
+import { navLinks } from '../constants';
+import { close, logo, menu } from '../assets'; 
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <nav className='w-full flex py-6 justify-between items-center navbar'>
+      Hi
+    </nav>
   )
 }
 

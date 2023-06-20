@@ -1,15 +1,15 @@
-import styles from './styles'
-import { About, Bio, Contact, Footer, Navbar, Projects, Techstack } from './components'
+import styles from './style';
+import { Welcome, Bio, Contact, Footer, Navbar, Projects, Techstack } from './components'
 
 
-const App = () => {
-  return (
-    <div className="bg-primary w-full overflow-hidden">
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
-          Navbar
-        </div>
+const App = () => (
+  <div className="bg-primary w-full overflow-hidden">
+    {/* <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Navbar />
       </div>
+    </div> */}
+    <h1>hi hi hello</h1>
 
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
@@ -19,14 +19,15 @@ const App = () => {
 
       <div className={`bg-primary ${styles.paddingX} {$styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          Stats
-          About 
-          Footer 
+          <Welcome />
+          <Bio />
+          <Techstack />
+          <Projects />
+          <Contact />
+          <Footer />
         </div>
       </div>
-
     </div>
   )
-}
 
 export default App
