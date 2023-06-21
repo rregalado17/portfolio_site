@@ -4,12 +4,11 @@ import { Welcome, Bio, Contact, Footer, Navbar, Projects, Techstack } from './co
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
-    {/* <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />
       </div>
-    </div> */}
-    <h1>hi hi hello</h1>
+    </div>
 
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
