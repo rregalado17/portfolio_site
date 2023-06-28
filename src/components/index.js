@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Techstack from "./Techstack";
+import Blog from "./Blog";
 
 export {
     Welcome,
@@ -13,5 +14,6 @@ export {
     Footer,
     Navbar,
     Projects,
-    Techstack
+    Techstack,
+    Blog
 };
