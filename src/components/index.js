@@ -6,6 +6,7 @@ import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Techstack from "./Techstack";
 import Blog from "./Blog";
+import Tech from "./Tech";
 
 export {
     Welcome,
@@ -15,5 +16,6 @@ export {
     Navbar,
     Projects,
     Techstack,
-    Blog
+    Blog,
+    Tech
 };

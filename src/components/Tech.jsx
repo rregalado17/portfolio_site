@@ -1,12 +1,31 @@
 import React, { useState, useEffect } from "react";
-// import { Card, CardImg, CardBody, CardTitle, CardSubtitle, Row, Col } from "reactstrap";
-// var moment = require("moment");
 import styles from "../style";
 
 const Tech = () => {
-  return (
-    <div>Tech</div>
-  )
-}
+    const [gitData, setGitData] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
+  
+    useEffect(() => {
+      fetch(`https://api.github.com/users/rregalado17/repos`)
+        .then(res => res.json())
+        .then(response => {
+          setGitData(response);
+          setIsLoading(false);
+        })
+        .catch(err => console.log(err));
+    }, []);
+
+    const languages = gitData.map(({language}) => language).join(', ')
+    console.log(languages)
+    
+  
+    return (
+      <div id="blog" className="container mt-3">
+        {/* {isLoading && <p>Fetching data from Medium!</p>}
+       {console.log(finalData)} */}
+      </div>
+    );
+  };
+
 
 export default Tech
