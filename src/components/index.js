@@ -7,6 +7,7 @@ import Projects from "./Projects";
 import Techstack from "./Techstack";
 import Blog from "./Blog";
 import Tech from "./Tech";
+import Stats from "./Stats"
 
 export {
     Welcome,
@@ -17,5 +18,6 @@ export {
     Projects,
     Techstack,
     Blog,
+    Stats,
     Tech
 };

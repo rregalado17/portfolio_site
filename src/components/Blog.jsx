@@ -24,8 +24,8 @@ const Blog = () => {
     <div id="blog" className="container mt-3">
       <h3 className="ui horizontal header divider mt-5">Blog</h3>
       {isLoading && <p>Fetching data from Medium!</p>}
-        <section className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} flex flex-wrap sm:justify-start justify-center w-full relative z-[1] feedback-container bg-black-gradient-2 rounded-[20px] box-shadow`}>
-        <h2 className={`${styles.heading2}`}>Techstack</h2>
+      <h2 className={`${styles.heading2}`}>Techstack</h2>
+      <section className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} flex flex-wrap sm:justify-start justify-center w-full relative z-[1] feedback-container bg-black-gradient-2 rounded-[20px] box-shadow`}>
         {finalData.map(article => (
             <div md="4" className='flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1]'>
             <div className='flex-1 flex flex-col'>

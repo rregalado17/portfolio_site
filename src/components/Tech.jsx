@@ -15,8 +15,8 @@ const Tech = () => {
         .catch(err => console.log(err));
     }, []);
 
-    const languages = gitData.map(({language}) => language).join(', ')
-    console.log(languages)
+    const languages = gitData.map(({language}) => language)
+    // console.log(languages)
     
   
     return (
