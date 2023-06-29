@@ -7,7 +7,8 @@ import Projects from "./Projects";
 import Techstack from "./Techstack";
 import Blog from "./Blog";
 import Tech from "./Tech";
-import Stats from "./Stats"
+import GitHubLanguages from './GitHubLanguages'
+
 
 export {
     Welcome,
@@ -18,6 +19,6 @@ export {
     Projects,
     Techstack,
     Blog,
-    Stats,
+    GitHubLanguages,
     Tech
 };

@@ -6,7 +6,7 @@ const Tech = () => {
     const [isLoading, setIsLoading] = useState(true);
   
     useEffect(() => {
-      fetch(`https://api.github.com/users/rregalado17/repos`)
+      fetch(`https://api.github.com/users/rregalado17/repos?page=1&per_page=101`)
         .then(res => res.json())
         .then(response => {
           setGitData(response);
