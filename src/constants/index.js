@@ -74,22 +74,12 @@ export const feedback = [
   },
 ];
 
-export const stats = [
+export const welcome = [
   {
-    id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    id: "welcome1",
+    content: "Hi! Welcome to my portfolio site. My name is Robinson Regalado and I am a Ruby/JS fullstack software engineer. Below is a breakdown of my projects and developments so far. If you're interested in working together, just hit the button and lets get in touch!"
   },
-  {
-    id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
-  },
-  {
-    id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
-  },
+
 ];
 
 export const footerLinks = [
