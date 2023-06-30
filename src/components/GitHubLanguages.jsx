@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import Tech from './Tech';
+import styles from '../style';
 
 const GitHubLanguages = ({ username }) => {
   const [languages, setLanguages] = useState([]);
@@ -12,7 +14,7 @@ const GitHubLanguages = ({ username }) => {
         let response;
 
         do {
-          response = await fetch(`https://api.github.com/users/rregalado17/repos?page=${page}&per_page=100`);
+          response = await fetch(`https://api.github.com/users/${username}/repos?page=${page}&per_page=100`);
           const data = await response.json();
           repositories = repositories.concat(data);
           page++;
@@ -46,21 +48,20 @@ const GitHubLanguages = ({ username }) => {
     fetchLanguages();
   }, [username]);
 
+
+
   return (
     <div>
-      <h2>Languages used in {username}'s repositories:</h2>
-      {loading ? (
-        <p>Loading...</p>
-      ) : (
-        <ul>
-          {languages.map(({ language, count }, index) => (
-            <li key={index}>
-              {language} - {count} repositories
-            </li>
-          ))}
-        </ul>
+      <h2 className={`${styles.heading2}`}>Languages used in {username}'s repositories:</h2>
+      <section id="clients" className={`${styles.paddingY} flex-col relative`}>
+       {loading ? (
+        <p className={`${styles.heading2} ${styles.flexCenter}`}>Loading...</p>
+          ) : (
+        <h2 className={`${styles.heading2}`}><Tech languages={languages} /></h2>
       )}
-    </div>
+      </section>
+      </div>
+
   );
 };
 

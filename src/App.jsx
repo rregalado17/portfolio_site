@@ -20,12 +20,10 @@ const App = () => (
         <div className={`${styles.boxWidth}`}>
           <Welcome />
           <Bio />
-          <Techstack />
-          <Tech />
           <Projects />
-          {/* <Contact /> */}
           <Blog />
-          <GitHubLanguages/>
+          <GitHubLanguages username= "rregalado17"/>
+          {/* <Contact /> */}
           <Footer />
         </div>
       </div>

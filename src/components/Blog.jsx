@@ -1,6 +1,5 @@
 
 import React, { useState, useEffect } from "react";
-// import { Card, CardImg, CardBody, CardTitle, CardSubtitle, Row, Col } from "reactstrap";
 // var moment = require("moment");
 import styles from "../style";
 
@@ -27,7 +26,7 @@ const Blog = () => {
       <h2 className={`${styles.heading2}`}>Techstack</h2>
       <section className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} flex flex-wrap sm:justify-start justify-center w-full relative z-[1] feedback-container bg-black-gradient-2 rounded-[20px] box-shadow`}>
         {finalData.map(article => (
-            <div md="4" className='flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1]'>
+            <div md="4" className='flex flex-wrap ssm:justify-start justify-center w-full feedback-container relative z-[1]'>
             <div className='flex-1 flex flex-col'>
                 <img top width="100%" src={article.thumbnail} alt="img" />
                     <div>

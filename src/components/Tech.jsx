@@ -1,31 +1,45 @@
-import React, { useState, useEffect } from "react";
-import styles from "../style";
+import styles from '../style';
+import ReactApexChart from 'react-apexcharts';
 
-const Tech = () => {
-    const [gitData, setGitData] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
-  
-    useEffect(() => {
-      fetch(`https://api.github.com/users/rregalado17/repos?page=1&per_page=101`)
-        .then(res => res.json())
-        .then(response => {
-          setGitData(response);
-          setIsLoading(false);
-        })
-        .catch(err => console.log(err));
-    }, []);
 
-    const languages = gitData.map(({language}) => language)
-    // console.log(languages)
-    
-  
-    return (
-      <div id="blog" className="container mt-3">
-        {/* {isLoading && <p>Fetching data from Medium!</p>}
-       {console.log(finalData)} */}
-      </div>
-    );
+const Tech = ({ languages }) => {
+  const chartOptions = {
+    labels: languages.map(({ language }) => language),
+    plotOptions: {
+      pie: {
+        donut: {
+          labels: {
+            show: true,
+            value: {
+              formatter: function (val) {
+                return val + (val > 1 ? ' repositories' : ' repository');
+              },
+              style: {
+                color: ['ffffff']
+              }
+            },
+          },
+        },
+      },
+    },
   };
 
+  const chartSeries = languages.map(({ count }) => count);
 
-export default Tech
+  return (
+    <section>
+    <div>
+      <div ><ReactApexChart
+        options={chartOptions}
+        series={chartSeries}
+        type="donut"
+        height={400}
+      />
+      </div>
+    </div>
+    </section>
+  );
+};
+
+export default Tech;
+
