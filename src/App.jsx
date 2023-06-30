@@ -18,12 +18,14 @@ const App = () => (
 
       <div className={`bg-primary ${styles.paddingX} {$styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
+      
+
           <Welcome />
           <Bio />
           <Projects />
           <Blog />
-          <GitHubLanguages username= "rregalado17"/>
           {/* <Contact /> */}
+          <GitHubLanguages username= "rregalado17"/>
           <Footer />
         </div>
       </div>
