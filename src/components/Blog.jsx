@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-// var moment = require("moment");
+import moment from 'moment'
 import styles from "../style";
 
 const Blog = () => {
@@ -17,31 +17,44 @@ const Blog = () => {
       .catch(err => console.log(err));
   }, []);
 
-  const finalData = mediumData.slice(0, 6);
+  const finalData = mediumData.slice(0, 4);
+
 
   return (
-    <div id="blog" className="container mt-3">
-      <h3 className="ui horizontal header divider mt-5">Blog</h3>
-      {isLoading && <p>Fetching data from Medium!</p>}
-      <h2 className={`${styles.heading2}`}>Techstack</h2>
-      <section className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} flex flex-wrap sm:justify-start justify-center w-full relative z-[1] feedback-container bg-black-gradient-2 rounded-[20px] box-shadow`}>
+    <section id="clients" className={`${styles.paddingY} ${styles.flexCenter} flex-col relative`}>
+    <div className="absolute z-[0] w-[60%] h-[60%] -left-[50%] rounded-full blue__gradient" />     
+    {isLoading && <p className={`${styles.heading2}`}>Fetching data from Medium!</p>}
+      <h2 className={`${styles.heading2}`}>Medium Blog Posts:</h2>
+      <section className={`${styles.padding} flex flex-wrap sm:justify-start justify-center w-full relative z-[1] feedback-container`}>
         {finalData.map(article => (
-            <div md="4" className='flex flex-wrap ssm:justify-start justify-center w-full feedback-container relative z-[1]'>
-            <div className='flex-1 flex flex-col'>
-                <img top width="100%" src={article.thumbnail} alt="img" />
-                    <div>
+            <div className='flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card'>
+            <div className='flex flex-col ml-4 mr6'>
+                <img src={article.thumbnail} alt="img" className="w-[50px] h-[50px] rounded-full mb-4" />
+                    <div className='font-poppins font-semibold text-[20px] leading-[32px] text-white'>
                         <a href={article.link}>{article.title}</a>
                     </div>
-                    <p className={`${styles.paragraph} max-w-[470px] mt-5`}>Published:{" "}
-                        {/* {moment(article.pubDate).format("dddd, MMMM Do YYYY")} */}
-                        (article.pubDate).format("dddd, MMMM Do YYYY")
+                    <p className='font-poppins font-normal text-[16px] leading-[24px] text-dimWhite'>Published:{" "}
+                        {moment(article.pubDate).format("dddd, MMMM Do YYYY")}
                     </p>
             </div>
           </div>
         ))}
         </section>
-    </div>
+
+    </section>
   );
 };
 
 export default Blog;
+
+
+// <div className='flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card'>
+// <p className='font-poppins font-normal text-[18px] leading-[32px] text-white my-10'> {content} </p>   
+// <div className='flex flex-row'>
+//     <img src={img} alt={name} className="w-[48px] h-[48px] rounded-full"/> 
+//     <div className='flex flex-col ml-4'>
+//         <h4 className='font-poppins font-semibold text-[20px] leading-[32px] text-white'>{name}</h4>
+//         <p className='font-poppins font-normal text-[16px] leading-[24px] text-dimWhite'>{title}</p>
+//     </div>
+// </div>
+// </div>
