@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../style'
-import { rrdev_logo } from '../assets'
+import { rrdev_logo, github } from '../assets'
 import { footerLinks, socialMedia, clients } from '../constants'
 
 const Footer = () => (
@@ -16,6 +16,13 @@ const Footer = () => (
           <p className={`${styles.paragraph} mt-4 max-w-[310px]`}>Feel free to contact me using the following links!</p>
       </div>
 
+      {/* <div className={`${styles.flexCenter} flex-wrap w-full`} >
+        {clients.map((client) => (
+          <div key={client.id}>
+            <img src={client.logo} alit="client" className="sm:w-[192px] w-[100px] object-contain"/> 
+          </div>
+        ))}
+      </div> */}
 
 
       <div className='flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10'>
@@ -24,9 +31,16 @@ const Footer = () => (
           <h4 className='font-poppins font-medium text-[18px] leading-[27px] text-white'>{footerLink.title}</h4>
           <ul>
             {footerLink.links.map((link, index) => (
-              <li key={link.name}
-              className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer`}>
-                {link.name}
+              <li 
+                key={link.name}
+                className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer`}
+              >
+                <img 
+                  key={link.name}
+                  src={link.icon} 
+                  alt="icon" 
+                  // className="sm:w-[192px] w-[100px] object-contain"/> 
+                  className={`w-[21px] h-[21px] object-contain cursor-pointer`}/> {link.name}
               </li>
             ))}
           </ul>

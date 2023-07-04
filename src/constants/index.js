@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star, github  } from "../assets";
 
 export const navLinks = [
   {
@@ -101,22 +101,32 @@ export const footerLinks = [
     title: "Contact",
     links: [
       {
+        id: "social-media-1",
+        icon: github,
         name: "GitHub",
         link: "https://github.com/rregalado17",
       },
       {
+        id: "social-media-2",
+        icon: blog,
         name: "Medium",
         link: "https://medium.com/@rregalado17",
       },
-      {
+      { 
+        id: "social-media-3",
+        icon: linkedin,
         name: "LinkedIn",
         link: "https://www.linkedin.com/in/rregalado91/",
       },
       {
-        name: "Resume",
+        id: "social-media-4",
+        icon: resume,        
+        name: "Resume", 
         link: "https://www.hoobank.com/explore/",
       },
       {
+        id: "social-media-1",
+        icon: email,
         name: "Email",
         link: "https://www.hoobank.com/explore/",
       },
@@ -200,6 +210,6 @@ export const clients = [
   },
   {
     id: "client-4",
-    logo: dropbox,
+    logo: linkedin,
   },
 ];
