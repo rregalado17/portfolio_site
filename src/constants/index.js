@@ -98,27 +98,27 @@ export const welcome = [
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Contact",
     links: [
       {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
+        name: "GitHub",
+        link: "https://github.com/rregalado17",
       },
       {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
+        name: "Medium",
+        link: "https://medium.com/@rregalado17",
       },
       {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
+        name: "LinkedIn",
+        link: "https://www.linkedin.com/in/rregalado91/",
       },
       {
-        name: "Explore",
+        name: "Resume",
         link: "https://www.hoobank.com/explore/",
       },
       {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
+        name: "Email",
+        link: "https://www.hoobank.com/explore/",
       },
     ],
   },
