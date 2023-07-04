@@ -9,12 +9,15 @@ const Welcome = ( ) =>  (
 
   <section id="clients" className={`${styles.paddingY} ${styles.flexCenter} flex-col relative`}>
   <div className="absolute z-[0] w-[60%] h-[60%] -top-[50%] rounded-full blue__gradient" />  
-      <p className={`${styles.paragraph}`}> {welcome[0].content} </p>
-      <div className=' flex-col xl:px-0 sm:px-16 px-6'>
-        <div className='ss:flex hidden md:mr-4 mr-0'>
+  <div className='columns-2 w-full md:mt-0 mt-6'>
+      <p className={`${styles.paragraph}`}> {welcome[0].content} </p><br/>
+        <div className={`${styles.flexCenter}`}>
+          <div className='ss:flex hidden md:mr-4 mr-0'>
             <Contact />
           </div>
+          </div>
       </div>
+
     </section>
   )
 

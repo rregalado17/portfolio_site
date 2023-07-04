@@ -47,8 +47,8 @@ const GitHubLanguages = ({ username }) => {
 
   return (
     <div>
-      <h1 className={`${styles.heading2}`}>TechStack</h1>
-      <h1 className='flex justify-center text-white'>Here are the languages I have experience with. This information is being pulled directly from my GitHub repos utilized across all projects.</h1>
+      <h1 className={`${styles.heading2}`}>TechStack</h1><br/>
+      <h1 className={`{styles.flexCenter} font-poppins font-normal text-[18px] leading-[32px] text-white my-10}`}>Here are the languages I have experience with. This information is being pulled directly from my GitHub repos utilized across all projects.</h1>
       <section >
       {loading ? (
         <p className={`${styles.heading2} ${styles.flexCenter}`}>Loading...</p>

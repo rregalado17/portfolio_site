@@ -47,13 +47,14 @@ export const features = [
   },
 ];
 
-export const feedback = [
+export const youtube = [
   {
     id: "project-1",
     content:
       "MVC Rails web app that lets users create an account and browse vacation packages within your budget.",
     name: "Local Scout",
-    title: "Founder & Leader",
+    youtube: "https://youtu.be/4gfXUzA6p60",
+    github: "https://github.com/rregalado17/local-scout-master",
     img: people01,
   },
   {
@@ -61,7 +62,8 @@ export const feedback = [
     content:
       "MVC Ruby on Rails web app that lets user create an account, comment on cafes and interact with others.",
     name: "Remote Cafe",
-    title: "Founder & Leader",
+    youtube: "https://youtu.be/ZhcnHXwgOPE",
+    github: "https://github.com/rregalado17/litigation-manager",
     img: people02,
   },
   {
