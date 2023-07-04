@@ -4,7 +4,7 @@ import { rrdev_logo, github } from '../assets'
 import { footerLinks, socialMedia, clients } from '../constants'
 
 const Footer = () => (
-  <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
+  <section className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}>
     <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
       
       <div className='flex-1 flex flex-col justify-start mr-10'>
@@ -24,24 +24,21 @@ const Footer = () => (
         ))}
       </div> */}
 
-
-      <div className='flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10'>
+    
+      <div className='flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10 '>
         {footerLinks.map((footerLink) => (
         <div key={footerLink.key} className='flex flex-col ss:my-0 my-04 min-w-[150px]'>
-          <h4 className='font-poppins font-medium text-[18px] leading-[27px] text-white'>{footerLink.title}</h4>
+          <h4 className='font-poppins font-medium text-[20px] leading-[27px] text-white'>{footerLink.title}</h4><br/>
           <ul>
             {footerLink.links.map((link, index) => (
               <li 
                 key={link.name}
-                className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer`}
-              >
-                <img 
+                className={`font-poppins font-normal text-[18px] text-dimWhite hover:text-secondary cursor-pointer`}
+              ><img 
                   key={link.name}
                   src={link.icon} 
                   alt="icon" 
-                  // className="sm:w-[192px] w-[100px] object-contain"/> 
-                  className={`w-[21px] h-[21px] object-contain cursor-pointer`}/> {link.name}
-              </li>
+                  className="w-[30px] h-[30px] object-contain"/> {link.name}</li>
             ))}
           </ul>
         </div>
