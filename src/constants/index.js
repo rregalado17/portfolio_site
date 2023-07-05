@@ -61,8 +61,7 @@ export const projDescription = [
 export const projects = [
   {
     id: "project-1",
-    content:
-      "Local Scout is a Rails MVC web application available on GitHub and YouTube. The app focuses on budget-friendly vacation planning, allowing users to create an account and browse vacation packages within their desired price range. The development process involved utilizing the Rails MVC framework, ensuring a robust full stack application. User authentication and validation standards were implemented to secure user credentials and ensure a seamless sign-up process. The application also incorporates various associations, including belongs_to, has_many, and many_to_many relationships. This enables users to browse, reserve, pay, and comment on trips offered by clients through the Destinations platform. As users interact with the app, the remaining account balance is dynamically updated in real-time. In addition, a backend API was built to facilitate communication with the frontend, following the principles of the REST architecture. Overall, Local Scout is a feature-rich web application designed to provide users with an intuitive and budget-conscious vacation planning experience.",
+    content:"Rails MVC web application focused on budget-friendly vacation planning. Users can create an account and browse vacation packages within their desired price range. Implemented user authentication and validation standards for secure sign-up process. Incorporates associations for browsing, reserving, paying, and commenting on trips, with real-time account balance updates.",
     name: "Local Scout",
     youtube: "https://youtu.be/4gfXUzA6p60",
     github: "https://github.com/rregalado17/local-scout-master",
@@ -70,7 +69,7 @@ export const projects = [
   },
   {
     id: "project-2",
-    content: "The application is a full stack web app built using the Rails MVC framework, providing users with the ability to create accounts, comment on cafes, and create new cafes for review. Leveraging the Google Maps API, location-related features are seamlessly integrated. Administrators hold special privileges, allowing them to perform Create, Read, Update, and Delete (CRUD) operations that regular users cannot access. These privileges are enforced through validations and helpers. Following the REST architecture and adhering to SOLID principles, the app ensures smooth communication between the frontend and backend. To enhance the user interface, the Bootstrap styles were customized, resulting in a more organized and visually appealing UI, including improved alerts and navigation bars. ActiveStorage, along with AWS S3, is utilized for image storage, while user information is stored in a Postgres database. This combination of technologies and techniques results in a robust and user-friendly web application.",
+    content: "Built with Rails MVC framework, allowing users to create accounts, comment on cafes, and create new cafes for review. Seamless integration of Google Maps API: Location-related features integrated into the app. Special privileges for administrators: CRUD operations exclusive to admins, enforced through validations and helpers. Enhanced UI and data storage: Customized Bootstrap styles for improved UI, ActiveStorage with AWS S3 for image storage, and Postgres database for user information.",
     name: "Remote Cafe",
     youtube: "https://youtu.be/ZhcnHXwgOPE",
     github: "https://github.com/rregalado17/remote_cafe_app",
@@ -79,10 +78,19 @@ export const projects = [
   {
     id: "project-3",
     content:
-      "Litigation Manager is a single-page web application that combines a Rails backend with a React frontend. This application, available on GitHub and YouTube, allows users to build lawyer and litigation profiles efficiently. The development process involved creating a Rails API that enables the creation and management of information related to lawyers and their litigation matters. Users can build profiles specific to lawyers or matters for internal tracking purposes. To handle the frontend, Redux was implemented to manage state asynchronously within the React components and their children. Additionally, fetch requests were built using Axios to transmit information seamlessly between the backend and frontend. The development approach followed Object-Oriented Programming (OOP) principles and separation of concerns to enhance clarity and performance. Iteration methods and reducers were also utilized to efficiently retrieve, manage, display, and sort data from objects. The Litigation Manager web app provides a robust platform for users to create and organize lawyer and litigation profiles effectively.",
+      "Single-page web application combining Rails backend and React frontend. Efficient lawyer and litigation profile building: Users can create profiles specific to lawyers or matters for internal tracking. Redux for state management: Asynchronous state management using Redux within React components. Object-Oriented Programming and separation of concerns: Development approach focused on OOP principles, clarity, and performance. Iteration methods and reducers utilized for efficient data retrieval, management, display, and sorting.",
     name: "Litigation Manager",
     youtube: "https://youtu.be/ZhcnHXwgOPE",
     github: "https://github.com/rregalado17/litigation-manager",
+    img: people02,
+  },
+  {
+    id: "project-4",
+    content:
+      "Single-page React website utilizing Tailwind CSS. Functional React components, reusability, and responsive design.  Fetches data from Github and Medium APIs to display work on top of soft and pleasant gradients added throughout the site. Website outlines my bio, projects, blogs, contact, and coding stats and deployed on Hostinger.",
+    name: "Portfolio Site",
+    youtube: null,
+    github: "https://github.com/rregalado17/portfolio_site",
     img: people02,
   },
 ];
@@ -100,12 +108,29 @@ export const footerLinks = [
   {
     title: "Contact",
     links: [
+      {
+        id: "contact-5",
+        icon: email,
+        name: "E-mail",
+        link: "https://www.hoobank.com/explore/",
+      },
       { 
         id: "contact-1",
         icon: linkedin,
         name: "LinkedIn",
         link: "https://www.linkedin.com/in/rregalado91/",
       },
+      {
+        id: "contact-4",
+        icon: resume,        
+        name: "Resume", 
+        link: "https://www.hoobank.com/explore/",
+      },
+    ],
+  },
+  {
+    title: "Community",
+    links: [
       {
         id: "contact-2",
         icon: github,
@@ -118,58 +143,8 @@ export const footerLinks = [
         name: "Medium",
         link: "https://medium.com/@rregalado17",
       },
-      {
-        id: "contact-4",
-        icon: resume,        
-        name: "Resume", 
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        id: "contact-5",
-        icon: email,
-        name: "Email",
-        link: "https://www.hoobank.com/explore/",
-      },
     ],
   },
-  // {
-  //   title: "Community",
-  //   links: [
-  //     {
-  //       name: "Help Center",
-  //       link: "https://www.hoobank.com/help-center/",
-  //     },
-  //     {
-  //       name: "Partners",
-  //       link: "https://www.hoobank.com/partners/",
-  //     },
-  //     {
-  //       name: "Suggestions",
-  //       link: "https://www.hoobank.com/suggestions/",
-  //     },
-  //     {
-  //       name: "Blog",
-  //       link: "https://www.hoobank.com/blog/",
-  //     },
-  //     {
-  //       name: "Newsletters",
-  //       link: "https://www.hoobank.com/newsletters/",
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "Partner",
-  //   links: [
-  //     {
-  //       name: "Our Partner",
-  //       link: "https://www.hoobank.com/our-partner/",
-  //     },
-  //     {
-  //       name: "Become a Partner",
-  //       link: "https://www.hoobank.com/become-a-partner/",
-  //     },
-  //   ],
-  // },
 ];
 
 export const socialMedia = [
