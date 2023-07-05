@@ -1,6 +1,6 @@
 import Welcome from "./Welcome";
 import Bio from "./Bio";
-import Contact from "./Contact";
+import ContactButton from "./ContactButton";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
@@ -13,7 +13,7 @@ import GitHubLanguages from './GitHubLanguages'
 export {
     Welcome,
     Bio,
-    Contact,
+    ContactButton,
     Footer,
     Navbar,
     Projects,

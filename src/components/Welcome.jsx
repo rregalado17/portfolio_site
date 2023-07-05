@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../style'
 import { discount, robot } from '../assets'
-import Contact from './Contact';
+import ContactButton from './ContactButton';
 import { welcome } from '../constants'
 
 
@@ -13,7 +13,7 @@ const Welcome = ( ) =>  (
       <p className={`${styles.paragraph}`}> {welcome[0].content} </p><br/>
         <div className={`${styles.flexCenter}`}>
           <div className='ss:flex hidden md:mr-4 mr-0'>
-            <Contact />
+            <ContactButton />
           </div>
           </div>
       </div>
