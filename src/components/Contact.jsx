@@ -4,6 +4,7 @@ import { rrdev_logo, github } from '../assets'
 import { footerLinks, socialMedia, clients } from '../constants'
 
 const Contact = () => (
+  <div className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
   <section className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} w-[900px] h-[410px] sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}>
     <div className={`${styles.flexCenter} md:flex-row flex-col mb-8 w-full`}>
       <div className='flex-[2] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10' key="1">
@@ -12,8 +13,11 @@ const Contact = () => (
           <h4 className='font-poppins font-medium text-[25px] leading-[27px] text-white mt-12'>{footerLink.title}</h4><br/>
           <ul>
             {footerLink.links.map((link, index) => (
-              <li key={link.id} className={`font-poppins font-normal text-[18px] text-dimWhite hover:text-secondary cursor-pointer ml-6 mb-4 relative z-[1]`}>
-                <img src={link.icon} alt="icon" className="w-[30px] h-[30px] ml-5"/> {link.name} 
+              <li key={link.id} className='font-poppins font-normal text-[18px] ml-6 mb-4 relative z-[1]'>
+                <img src={link.icon} alt="icon" className="w-[30px] h-[30px] ml-5"/> 
+                <div className='font-poppins font-normal text-[18px] leading-[32px]  text-dimWhite hover:text-secondary cursor-pointer'>
+                  <a href={link.link}>{link.name}</a>
+                </div> 
               </li>
             ))}
           </ul>
@@ -29,6 +33,7 @@ const Contact = () => (
       </div>
     </div>
   </section>
+  </div>
 )
 
 export default Contact 

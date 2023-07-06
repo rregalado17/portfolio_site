@@ -4,7 +4,7 @@ import styles from '../style'
 import CardInfo from './CardInfo' 
 
 
-const Projects = () => (
+const Projects = () => ( 
   <section id="clients" className={`${styles.paddingY} ${styles.flexCenter} flex-col relative`}>
     <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient" />
       <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
