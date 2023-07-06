@@ -1,5 +1,5 @@
 import styles from './style';
-import { Welcome, Bio, GitHubLanguages, ContactButton, Tech, Footer, Navbar, Projects, Techstack, Blog } from './components'
+import { Welcome, Bio, GitHubLanguages, Contact, Tech, Footer, Navbar, Projects, Techstack, Blog } from './components'
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
@@ -17,6 +17,7 @@ const App = () => (
         <Blog />
         {/* <Contact /> */}
         <GitHubLanguages username= "rregalado17"/>
+        <Contact />
         <Footer />
       </div>
     </div>

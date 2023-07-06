@@ -8,11 +8,14 @@ import Techstack from "./Techstack";
 import Blog from "./Blog";
 import Tech from "./Tech";
 import GitHubLanguages from './GitHubLanguages'
+import Contact from "./Contact";
+
 
 
 export {
     Welcome,
     Bio,
+    Contact,
     ContactButton,
     Footer,
     Navbar,

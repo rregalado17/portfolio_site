@@ -26,8 +26,8 @@ const Blog = () => {
       <h2 className={`${styles.heading2}`}>Medium Blog Posts:</h2>
       <section className={`${styles.padding} flex flex-wrap sm:justify-start justify-center w-full relative z-[1] feedback-container`}>
         {finalData.map(article => (
-            <div className='flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card'>
-            <div className='flex flex-col ml-4 mr-6'>
+            <div key={article.id} className='flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card'>
+            <div key={article.id} className='flex flex-col ml-4 mr-6'>
                 <img src={article.thumbnail} alt="img" className="w-[50px] h-[50px] rounded-full mb-4" />
                     <div className='font-poppins font-semibold text-[20px] leading-[32px] text-white'>
                         <a href={article.link}>{article.title}</a>
@@ -39,7 +39,6 @@ const Blog = () => {
           </div>
         ))}
         </section>
-
     </section>
   );
 };
