@@ -17,7 +17,7 @@ const App = () => (
         <Bio />
         <Projects />
         <Blog />
-        <GitHubLanguages username= "rregalado17"/>
+        <Techstack username= "rregalado17"/>
         <Contact />
         <Footer />
       </div>

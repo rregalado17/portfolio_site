@@ -6,16 +6,16 @@ export const navLinks = [
     title: "Welcome",
   },
   {
-    id: "bio",
-    title: "Bio",
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "blog",
+    title: "Blog",
   },
   {
     id: "techstack",
     title: "Techstack",
-  },
-  {
-    id: "projects",
-    title: "Projects",
   },
   {
     id: "contact",
@@ -109,19 +109,19 @@ export const footerLinks = [
     title: "Contact",
     links: [
       {
-        id: "contact-5",
+        id: "contact-1",
         icon: email,
         name: "E-mail",
         link: "https://www.hoobank.com/explore/",
       },
       { 
-        id: "contact-1",
+        id: "contact-2",
         icon: linkedin,
         name: "LinkedIn",
         link: "https://www.linkedin.com/in/rregalado91/",
       },
       {
-        id: "contact-4",
+        id: "contact-3",
         icon: resume,        
         name: "Resume", 
         link: "https://www.hoobank.com/explore/",
@@ -129,16 +129,16 @@ export const footerLinks = [
     ],
   },
   {
-    title: "Community",
+    title: "Experience",
     links: [
       {
-        id: "contact-2",
+        id: "contact-4",
         icon: github,
         name: "GitHub",
         link: "https://github.com/rregalado17",
       },
       {
-        id: "contact-3",
+        id: "contact-5",
         icon: blog,
         name: "Medium",
         link: "https://medium.com/@rregalado17",

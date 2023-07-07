@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { navLinks } from '../constants';
-import { close, logo, menu, rrdev_logo } from '../assets'; 
+import {  menu, rrdev_logo } from '../assets'; 
 import { Link } from 'react-router-dom'
 
 const Navbar = () => {
@@ -8,7 +8,10 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
+
     <nav className="w-full flex py-6 justify-between items-center navbar">
+          <div className="absolute z-[0] w-[60%] h-[60%] -top-[50%] rounded-full blue__gradient" /> 
+
       <Link to={'/'} >
         <img src={rrdev_logo} alt='rregalado' className='w-[110px] h-[100px] bg-blue-gradient p-[2px] cursor-pointer' />
       </Link>/
@@ -22,11 +25,13 @@ const Navbar = () => {
             cursor-pointer
             text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}
             text-white`}
-          >            <a href={`#${nav.id}`}> {nav.title} </a>
+          >
+          <Link to={nav.id}>
+            {nav.title}
+          </Link>
           </li>
         ))}
       </ul>
-      <Link to={`/contact`}>Contact Me</Link>
 
       <div className='sm:hidden flex flex-1 justify-end items-center'>
         <img src={ toggle ? close : menu} 
