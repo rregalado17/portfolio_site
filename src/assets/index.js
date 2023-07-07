@@ -28,10 +28,12 @@ import rrdev_logo from './rrdev_logo.jpg'
 import blog from './blog.svg'
 import email from './email.svg'
 import resume from './resume.svg'
+import rregalado from './rregalado.jpeg'
 
 
 export {
   airbnb,
+  rregalado,
   resume,
   email,
   blog,

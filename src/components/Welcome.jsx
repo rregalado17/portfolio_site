@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../style'
-import { discount, robot } from '../assets'
+import { rregalado } from '../assets'
 import ContactButton from './ContactButton';
 import { welcome } from '../constants'
 
@@ -13,7 +13,9 @@ const Welcome = ( ) =>  (
       <p className={`${styles.paragraph}`}> {welcome[0].content} </p><br/>
         <div className={`${styles.flexCenter}`}>
           <div className='ss:flex hidden md:mr-4 mr-0'>
-            <ContactButton />
+            {/* <ContactButton /> */}
+            <img src={rregalado} alt='rregalado' className='w-[200px] h-[190px] bg-blue-gradient p-[2px] rounded-full' />
+
           </div>
           </div>
       </div>

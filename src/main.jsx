@@ -7,20 +7,51 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import ErrorPage from "./error-page";
+import Root from './routes/root.jsx';
+import Contact from './components/Contact.jsx';
+import Projects from './components/Projects.jsx';
+import Navbar from './components/Navbar.jsx';
 import Welcome from './components/Welcome.jsx';
+import Blog from './components/Blog.jsx';
+import Techstack from './components/Techstack.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Welcome />,
+    element: <App />,
     errorElement: <ErrorPage />,
+    children: [
+      {
+        path: '/projects',
+        element: <Projects />
+      },
+      {
+        path: '/nabar',
+        element: <Navbar />
+      },
+      {
+        path: '/contact',
+        element: <Contact />
+      },
+      {
+        path: '/welcome',
+        element: <Welcome />
+      },
+      {
+        path: '/blog',
+        element: <Blog />
+      },
+      {
+        path: '/techstack',
+        element: <Techstack />
+      }
+    ]
   },
 ]);
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
-    {/* <RouterProvider router={router} /> */}
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )

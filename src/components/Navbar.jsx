@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { navLinks } from '../constants';
 import { close, logo, menu, rrdev_logo } from '../assets'; 
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -8,7 +9,9 @@ const Navbar = () => {
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={rrdev_logo} alt='rregalado' className='w-[110px] h-[100px]'/>
+      <Link to={'/'} >
+        <img src={rrdev_logo} alt='rregalado' className='w-[110px] h-[100px] bg-blue-gradient p-[2px] cursor-pointer' />
+      </Link>/
     
       <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
         {navLinks.map((nav, index) => (
@@ -19,11 +22,12 @@ const Navbar = () => {
             cursor-pointer
             text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}
             text-white`}
-          >
-            <a href={`#${nav.id}`}> {nav.title} </a>
+          >            <a href={`#${nav.id}`}> {nav.title} </a>
           </li>
         ))}
       </ul>
+      <Link to={`/contact`}>Contact Me</Link>
+
       <div className='sm:hidden flex flex-1 justify-end items-center'>
         <img src={ toggle ? close : menu} 
           alt="menu"
