@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../style'
 import { rrdev_logo, github } from '../assets'
-import { footerLinks, socialMedia, clients } from '../constants'
+import { footerLinks } from '../constants'
 
 const Contact = () => (
   <div className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>

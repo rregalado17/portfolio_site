@@ -1,6 +1,6 @@
 import styles from './style';
 import { Outlet } from "react-router-dom"
-import { Welcome, Bio, GitHubLanguages, Contact, Tech, Footer, Navbar, Projects, Techstack, Blog } from './components'
+import { Welcome, Contact, Footer, Navbar, Projects, Techstack, Blog } from './components'
 
 const App = () => (
   <div id='detail' className="bg-primary w-full overflow-hidden">
@@ -14,7 +14,7 @@ const App = () => (
     <div className={`bg-primary ${styles.paddingX} {$styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Welcome />
-        <Bio />
+        
         <Projects />
         <Blog />
         <Techstack username= "rregalado17"/>
