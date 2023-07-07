@@ -46,7 +46,7 @@ const Techstack = ({ username }) => {
   }, [username]);
 
   return (
-    <section>
+    <section className={`${styles.padding} flex-col relative`}>
       <div className="absolute z-[0] w-[60%] h-[60%] -right-[40%] rounded-full blue__gradient" />
 
     <div>

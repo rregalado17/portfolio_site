@@ -5,8 +5,8 @@ import { footerLinks } from '../constants'
 
 const Contact = () => (
   <div className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
-  <section className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} w-[900px] h-[410px] sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}>
-    <div className={`${styles.flexCenter} md:flex-row flex-col mb-8 w-full`}>
+  <section className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} w-[900px] h-[350px] sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}>
+    <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
       <div className='flex-[2] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10' key="1">
         {footerLinks.map((footerLink) => (
         <div key={footerLink.key} className='flex flex-col ss:my-0 my-04 min-w-[150px]'>

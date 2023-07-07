@@ -10,7 +10,6 @@ const Navbar = () => {
   return (
 
     <nav className="w-full flex py-6 justify-between items-center navbar">
-          <div className="absolute z-[0] w-[60%] h-[60%] -top-[50%] rounded-full blue__gradient" /> 
 
       <Link to={'/'} >
         <img src={rrdev_logo} alt='rregalado' className='w-[110px] h-[100px] bg-blue-gradient p-[2px] cursor-pointer' />
@@ -32,7 +31,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-
+      
       <div className='sm:hidden flex flex-1 justify-end items-center'>
         <img src={ toggle ? close : menu} 
           alt="menu"

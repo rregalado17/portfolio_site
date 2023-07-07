@@ -20,7 +20,8 @@ const Blog = () => {
   const finalData = mediumData.slice(0, 4);
 
   return (
-    <section id="clients" className={`${styles.paddingY} ${styles.flexCenter} flex-col relative`}>
+    // <section id="clients" className={`${styles.paddingY} ${styles.flexCenter} flex-col relative`}>
+    <section className={`${styles.padding} flex-col relative`}>
     <div className="absolute z-[0] w-[60%] h-[60%] -left-[50%] rounded-full blue__gradient" />     
     {isLoading && <p className={`${styles.heading2}`}>Fetching data from Medium!</p>}
       <h2 className={`${styles.heading2}`}>Medium Blog Posts:</h2>
