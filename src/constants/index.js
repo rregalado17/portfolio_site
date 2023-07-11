@@ -1,4 +1,4 @@
-import { people01, people02, people03, resume, email, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star, github, blog  } from "../assets";
+import { people01, litigation_manager, local_scout, people02, people03, resume, email, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star, github, blog  } from "../assets";
 
 export const navLinks = [
   {
@@ -31,7 +31,7 @@ export const projDescription = [
     name: "Litigation Manager",
     youtube: "https://youtu.be/ZhcnHXwgOPE",
     github: "https://github.com/rregalado17/litigation-manager",
-    img: people02,
+    img: litigation_manager,
   },
 ]
 
@@ -42,7 +42,7 @@ export const projects = [
     name: "Local Scout",
     youtube: "https://youtu.be/4gfXUzA6p60",
     github: "https://github.com/rregalado17/local-scout-master",
-    img: people01,
+    img: local_scout,
   },
   {
     id: "project-2",
@@ -59,7 +59,7 @@ export const projects = [
     name: "Litigation Manager",
     youtube: "https://youtu.be/ZhcnHXwgOPE",
     github: "https://github.com/rregalado17/litigation-manager",
-    img: people02,
+    img: litigation_manager,
   },
   {
     id: "project-4",

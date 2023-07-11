@@ -29,15 +29,23 @@ import blog from './blog.svg'
 import email from './email.svg'
 import resume from './resume.svg'
 import rregalado from './rregalado.jpeg'
+import profile from './profile.jpeg'
+import profile_pic from './profile_pic.jpeg'
+import local_scout from './local_scout.png'
+import litigation_manager from './litigation_manager.png'
 
 
 export {
   airbnb,
   rregalado,
+  local_scout,
+  litigation_manager,
+  profile_pic,
   resume,
   email,
   blog,
   github,
+  profile,
   rrdev_logo,
   bill,
   binance,
