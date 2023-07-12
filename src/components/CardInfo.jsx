@@ -4,7 +4,7 @@ import Button from './Button';
 
 const CardInfo = ({ content, name, youtube, img, github }) => (
     <div className='flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card'>
-        <img src={img} alt={name} className="w-[180px] h-[150px]" />
+        <img src={img} alt={name} className='ml-12 w-[180px] h-[150px]' />
         <p className='font-poppins font-normal text-[14px] leading-[32px] text-white my-10'> {content} </p>   
         <div className='flex flex-row '>
             <div className='flex flex-col ml-4'>
@@ -27,8 +27,6 @@ const CardInfo = ({ content, name, youtube, img, github }) => (
                             </div>
                         </div>
                     </div>
-                {/* <a href={youtube} className='font-poppins font-normal text-[16px] leading-[24px] text-dimWhite'>Demo</a>
-                <a href={github} className='font-poppins font-normal text-[16px] leading-[24px] text-dimWhite'>Repo</a> */}
             </div>
         </div>
     </div>

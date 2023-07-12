@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import styles from '../style'
-import { rregalado, profile, profile_pic } from '../assets'
+import { profile_pic } from '../assets'
 import { welcome } from '../constants'
 
 

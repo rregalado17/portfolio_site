@@ -1,4 +1,4 @@
-import { people01, litigation_manager, local_scout, people02, people03, resume, email, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star, github, blog  } from "../assets";
+import { litigation_manager, local_scout, people02, resume, email, linkedin, github, blog, remote_cafe_app  } from "../assets";
 
 export const navLinks = [
   {
@@ -50,7 +50,7 @@ export const projects = [
     name: "Remote Cafe",
     youtube: "https://youtu.be/ZhcnHXwgOPE",
     github: "https://github.com/rregalado17/remote_cafe_app",
-    img: people02,
+    img: remote_cafe_app,
   },
   {
     id: "project-3",
