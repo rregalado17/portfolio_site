@@ -11,6 +11,7 @@ import local_scout from './local_scout.png'
 import litigation_manager from './litigation_manager.png'
 import remote_cafe_app from './remote_cafe_app.png'
 import menu from './menu.svg'
+import resumeSE from './resumeSE.pdf'
 
 
 export {
@@ -24,6 +25,7 @@ export {
   github,
   menu,
   rrdev_logo,
+  resumeSE,
   logo,
   linkedin,
   people02,

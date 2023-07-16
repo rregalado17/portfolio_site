@@ -1,4 +1,4 @@
-import { litigation_manager, local_scout, people02, resume, email, linkedin, github, blog, remote_cafe_app  } from "../assets";
+import { resumeSE, litigation_manager, local_scout, people02, resume, email, linkedin, github, blog, remote_cafe_app  } from "../assets";
 
 export const navLinks = [
   {
@@ -87,7 +87,7 @@ export const footerLinks = [
         id: "contact-1",
         icon: email,
         name: "E-mail",
-        link: "https://www.hoobank.com/explore/",
+        link: "mailto:'rregalado17@gmail.com'",
       },
       { 
         id: "contact-2",
@@ -99,7 +99,7 @@ export const footerLinks = [
         id: "contact-3",
         icon: resume,        
         name: "Resume", 
-        link: "https://www.hoobank.com/explore/",
+        link: resumeSE,
       },
     ],
   },
