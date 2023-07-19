@@ -2,23 +2,23 @@ import { resumeSE, litigation_manager, local_scout, people02, resume, email, lin
 
 export const navLinks = [
   {
-    id: "welcome",
+    id: "#welcome",
     title: "Welcome",
   },
   {
-    id: "projects",
+    id: "#projects",
     title: "Projects",
   },
   {
-    id: "blog",
+    id: "#blog",
     title: "Blog",
   },
   {
-    id: "techstack",
+    id: "#techstack",
     title: "Techstack",
   },
   {
-    id: "contact",
+    id: "#contact",
     title: "Contact",
   },
 ];

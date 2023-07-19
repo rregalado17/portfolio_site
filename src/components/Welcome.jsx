@@ -13,7 +13,7 @@ const Welcome = ( ) =>  {
   }
 
   return (
-  <section id="clients" className={`${styles.padding} flex-col relative`}>
+  <section id="#welcome" className={`${styles.padding} flex-col relative`}>
     <div ref={titleRef} className='columns-2 w-full md:mt-0 mt-6'>
       <p className={`${styles.paragraph}`}> {welcome[0].content} </p><br/>
         <div className={`${styles.flexCenter}`}>

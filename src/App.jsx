@@ -1,4 +1,5 @@
 import styles from './style';
+import React, { useState, useEffect } from 'react';
 import { Outlet } from "react-router-dom"
 import { Welcome, Contact, Footer, Navbar, Projects, Techstack, Blog } from './components'
 
