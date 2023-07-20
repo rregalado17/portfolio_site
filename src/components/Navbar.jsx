@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import { navLinks } from '../constants';
 import {  menu, rrdev_logo } from '../assets'; 
 import { Link } from 'react-router-dom'
-import App from '../App';
 
 const Navbar = () => {
 

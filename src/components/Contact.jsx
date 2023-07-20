@@ -29,7 +29,7 @@ const Contact = () => (
           src={rrdev_logo}
           alt='logo'
           className='w-[366px] h-[172px] object-contain'/>
-          <p className={`${styles.paragraph} mt-4 max-w-[500px]`}>Feel free to contact me using the following links!</p>
+          <p className={`${styles.paragraph} mt-4 max-w-[500px]`}>Feel free to contact me with any questions!</p>
       </div>
     </div>
   </section>

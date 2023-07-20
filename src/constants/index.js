@@ -83,6 +83,30 @@ export const welcome = [
 
 export const footerLinks = [
   {
+    title: "Experience",
+    links: [
+      {
+        id: "contact-4",
+        icon: github,
+        name: "GitHub",
+        link: "https://github.com/rregalado17",
+      },
+      {
+        id: "contact-3",
+        icon: resume,        
+        name: "Resume", 
+        link: resumeSE,
+      },
+      {
+        id: "contact-5",
+        icon: blog,
+        name: "Medium",
+        link: "https://medium.com/@rregalado17",
+      },
+
+    ],
+  },
+  {
     title: "Contact",
     links: [
       {
@@ -97,29 +121,6 @@ export const footerLinks = [
         name: "LinkedIn",
         link: "https://www.linkedin.com/in/rregalado91/",
       },
-      {
-        id: "contact-3",
-        icon: resume,        
-        name: "Resume", 
-        link: resumeSE,
-      },
     ],
-  },
-  {
-    title: "Experience",
-    links: [
-      {
-        id: "contact-4",
-        icon: github,
-        name: "GitHub",
-        link: "https://github.com/rregalado17",
-      },
-      {
-        id: "contact-5",
-        icon: blog,
-        name: "Medium",
-        link: "https://medium.com/@rregalado17",
-      },
-    ],
-  },
+  }
 ];
